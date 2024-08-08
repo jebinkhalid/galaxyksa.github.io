@@ -7,6 +7,40 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <style>
+             .testimonials-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 300px; /* Adjust this value to your desired minimum height */
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .text-content {
+            margin-top: auto;
+        }
+        .tabgroup img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* iPhone-specific styling */
+    @media screen and (max-width: 480px) {
+        .tabgroup img {
+            height: 150px; /* Set a fixed height that works well on iPhones */
+        }
+    }
+
+    /* General mobile styling for better responsiveness */
+    @media screen and (max-width: 768px) {
+        .tabgroup img {
+            height: 200px; /* Adjust the height as needed for other mobile devices */
+        }
+    }
+        </style>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -27,8 +61,8 @@ https://templatemo.com/tm-526-vanilla
     <div class="fixed-side-navbar">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#about us"><span>Services</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#services"><span>Portfolio</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#Aboutus"><span>About us</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#services"><span>services</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#our-story"><span>Our Story</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
         </ul>
@@ -46,7 +80,7 @@ https://templatemo.com/tm-526-vanilla
         </div>
     </div>
 
-    <div class="service-content" id="services">
+    <div class="service-content" id="Aboutus">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -103,7 +137,7 @@ https://templatemo.com/tm-526-vanilla
     
 
     
-    <div class="parallax-content projects-content" id="portfolio">
+    <div class="parallax-content projects-content" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -197,15 +231,15 @@ https://templatemo.com/tm-526-vanilla
                     <div class="wrapper">
                         <section id="first-tab-group" class="tabgroup">
                             <div id="tab1">
-                                <img src="img/mission.jpg" alt="Mission" height="20%">
+                                <img src="img/mission.jpg" alt="Mission">
                                 <p>At Galaxy Advertising, our mission is to empower businesses by providing innovative and impactful advertising solutions. We strive to understand our clients' needs and deliver results that exceed their expectations.</p>
                             </div>
                             <div id="tab2">
-                                <img src="img/vision.jpg" alt="Vision" height="20%">
+                                <img src="img/vision.jpg" alt="Vision">
                                 <p>Our vision is to be a leading force in the advertising industry, known for our creativity, reliability, and commitment to excellence. We aim to create a lasting impact on our clients' brands and help them achieve their business goals.</p>
                             </div>
                             <div id="tab3">
-                                <img src="img/values.jpg" alt="Values" height="10%">
+                                <img src="img/values.jpg" alt="Values">
                                 <p>We believe in integrity, innovation, and collaboration. Our values guide our approach to every project, ensuring that we deliver outstanding results and build strong, lasting relationships with our clients.</p>
                             </div>
                             <div id="tab4">
@@ -218,7 +252,6 @@ https://templatemo.com/tm-526-vanilla
                             <li><a href="#tab2">Vision</a></li>
                             <li><a href="#tab3">Values</a></li>
                             <li><a href="#tab4">Commitment</a></li>
-                            
                         </ul>
                     </div>
                 </div>
@@ -266,7 +299,7 @@ https://templatemo.com/tm-526-vanilla
 
     const whatsappMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappNumber = '+966510646458'; // Replace with your WhatsApp number, e.g., '1234567890'
+    const whatsappNumber = '+966539010541'; // Replace with your WhatsApp number, e.g., '1234567890'
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
